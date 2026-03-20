@@ -15,10 +15,11 @@ public class PhotoDetector : MonoBehaviour
         {
             Debug.Log("Hit: " + hit.collider.name);
 
-            PhotoTarget target = hit.collider.GetComponent<PhotoTarget>();
+            PhotoTarget target = hit.collider.GetComponentInParent<PhotoTarget>();
 
-            if (target != null)
+            if (target != null && target.enabled && target.gameObject.activeInHierarchy)
             {
+                Debug.Log("Valid target: " + target.displayName);
                 return target;
             }
         }

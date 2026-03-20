@@ -8,6 +8,9 @@ public class PhotoCapture : MonoBehaviour
 
     void Update()
     {
+        if (PauseMenuExistsAndOpen())
+            return;
+
         //we cant do stuff if the notebook ui is open
         if (NotebookManager.Instance != null && NotebookManager.Instance.IsOpen)
             return;
@@ -16,6 +19,12 @@ public class PhotoCapture : MonoBehaviour
         {
             TakePhoto();
         }
+    }
+
+    bool PauseMenuExistsAndOpen()
+    {
+        PauseMenu pm = FindFirstObjectByType<PauseMenu>();
+        return pm != null && pm.IsOpen();
     }
 
     void TakePhoto()
@@ -61,5 +70,7 @@ public class PhotoCapture : MonoBehaviour
 
             Debug.Log("Memo captured: " + target.displayName);
         }));
+
+        QuestManager.Instance.AddProgress(1);
     }
 }
