@@ -7955,6 +7955,14 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1045556687}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3843716870331872631, guid: b2a0df894ff4e104094394ec3de0a9b2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3843716870447499014}
+    - targetCorrespondingSourceObject: {fileID: 3843716870331872631, guid: b2a0df894ff4e104094394ec3de0a9b2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3843716870447499013}
     - targetCorrespondingSourceObject: {fileID: 3843716870190975464, guid: b2a0df894ff4e104094394ec3de0a9b2,
         type: 3}
       insertIndex: -1
@@ -7964,12 +7972,56 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 3843716870447499016}
   m_SourcePrefab: {fileID: 100100000, guid: b2a0df894ff4e104094394ec3de0a9b2, type: 3}
+--- !u!1 &3843716870447499011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3843716870331872631, guid: b2a0df894ff4e104094394ec3de0a9b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 3843716870447499010}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &3843716870447499012 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3843716870190975471, guid: b2a0df894ff4e104094394ec3de0a9b2,
     type: 3}
   m_PrefabInstance: {fileID: 3843716870447499010}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3843716870447499013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3843716870447499011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbf0cdfbe693be4dbfdf2242b854c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VHS.PlayerNoiseEmitter
+  horizontalAxis: Horizontal
+  verticalAxis: Vertical
+  runKey: 304
+  crouchKey: 306
+  jumpKey: 32
+  crouchNoiseRadius: 1
+  walkNoiseRadius: 3
+  runNoiseRadius: 8
+  jumpNoiseRadius: 10
+  movementNoiseInterval: 0.35
+  stealthStatus: {fileID: 0}
+--- !u!114 &3843716870447499014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3843716870447499011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fe21bdd1aa6d7840a1178079e934767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VHS.StealthPlayerStatus
+  isHidden: 0
+  visibilityMultiplier: 1
+  noiseMultiplier: 1
 --- !u!114 &3843716870447499016
 MonoBehaviour:
   m_ObjectHideFlags: 0
