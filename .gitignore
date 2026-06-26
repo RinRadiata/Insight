@@ -64,6 +64,10 @@ sysinfo.txt
 *.unitypackage.meta
 *.app
 
+# Ignore Unity scripts
+/[Aa]ssets/[Ss]cripts/
+/[Aa]ssets/[Ss]cripts.meta
+
 # Crashlytics generated file
 crashlytics-build.properties
 
