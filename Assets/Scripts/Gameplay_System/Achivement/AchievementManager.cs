@@ -15,8 +15,6 @@ public class AchievementManager : MonoBehaviour
 
         if (photoCount == 1)
         {
-            Debug.Log("Achievement unlocked: First Memo");
-
             AchievementUI.Instance.Show(
                 "Achievement Unlocked!",
                 "First Memo"
@@ -25,8 +23,6 @@ public class AchievementManager : MonoBehaviour
 
         if (photoCount == 5)
         {
-            Debug.Log("Achievement unlocked: Memorizer");
-
             AchievementUI.Instance.Show(
                 "Achievement Unlocked!",
                 "Memorizer"
