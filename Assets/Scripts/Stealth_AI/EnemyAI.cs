@@ -203,7 +203,7 @@ namespace VHS
         private void UpdateAttack()
         {
             agent.isStopped = true;
-            Debug.Log("[Stealth AI] Player caught. Game Over prototype.");
+            Debug.Log("Player caught. Game Over");
         }
 
         private void SetState(EnemyState newState)
