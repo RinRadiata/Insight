@@ -6097,6 +6097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526980367}
   - component: {fileID: 1526980366}
+  - component: {fileID: 1526980368}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -6184,6 +6185,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1132237009}
   m_LocalEulerAnglesHint: {x: 45, y: 130, z: 90}
+--- !u!114 &1526980368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526980365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c09b25184bc93f4488c810dd4d5fbc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SunSimulation
+  targerIntensity: 0
+  fadeSpeed: 0.1
+  rotationSpeed: 1
 --- !u!1 &1540580593
 GameObject:
   m_ObjectHideFlags: 0
